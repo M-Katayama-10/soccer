@@ -1,0 +1,52 @@
+<div class="">
+  <h2 class="">ユーザー新規登録</h2>
+
+  <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="">
+    <%= f.label :name, "ユーザー名" %><br />
+    <%= f.text_field :name, id:"" %>
+  </div>
+
+  <div class="">
+    <%= f.label :email, "メールアドレス" %><br />
+    <%= f.email_field :email, id:"", autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="">
+    <%= f.label :password, "パスワード（6文字以上）" %><br />
+    <%= f.password_field :password, id:"", autocomplete: "new-password" %>
+  </div>
+
+  <div class="">
+    <%= f.label :password, "パスワード再入力" %><br />
+    <%= f.password_field :password_confirmation, id:"", autocomplete: "new-password" %>
+  </div>
+
+  <div class="">
+    <%= f.label :caregory, "カテゴリー" %><br />
+    <%= f.text_field :caregory, id:"" %>
+  </div>
+
+  <div class="">
+    <%= f.label :belongs, "所属リーグ" %><br />
+    <%= f.text_field :belongs, id:"" %>
+  </div>
+
+  <div class="">
+    <%= f.label :hometown, "ホームタウン" %><br />
+    <%= f.text_field :hometown, id:"" %>
+  </div>
+
+  <div class="">
+    <%= f.label :homepage, "HP" %><br />
+    <%= f.text_field :homepage, id:"" %>
+  </div>
+
+  <div class="">
+    <%= f.submit "新規登録", class: :form__btn  %>
+  </div>
+
+  <% end %>
+</div>
