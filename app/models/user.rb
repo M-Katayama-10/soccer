@@ -11,7 +11,9 @@ class User < ApplicationRecord
     validates :hometown
   end
 
-  has_many :posts
+  has_many :posts, dependent: :destroy
   has_one_attached :image
+  has_many :messages, dependent: :destroy
+  has_many :entries, dependent: :destroy
 
 end

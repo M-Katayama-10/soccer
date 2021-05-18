@@ -1,3 +1,4 @@
+<h2>ユーザー詳細</h2>
 <div class ="">
   <h2 class="">
     <%= "#{@user.name}の情報"%>
@@ -42,6 +43,21 @@
     <%= @user.homepage %>
   </div>
 
-  <%= link_to "編集する", edit_user_path(current_user), class: "" %>
+
+ 
+  <%#= link_to "編集する", edit_user_path(current_user), class: "" %>
+
+  <% unless @user.id == current_user.id %>
+    <% if @isRoom == true %>
+      <p class=""><a href="/rooms/<%= @roomId %>" class="">DMへ</a>
+    <% else %>
+      <%= form_for @room do |f| %>
+        <%= fields_for @entry do |e| %>
+          <%= e.hidden_field :user_id, value: @user.id %>
+        <% end %>
+        <%= f.submit "DMする", class:""%>
+      <% end %>
+    <% end %>
+  <% end %>
 
 </div>
