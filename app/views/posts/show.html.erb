@@ -1,0 +1,53 @@
+<div class ="">
+  <div class = "">
+    <%= @post.days %>
+  </div>
+
+  <div class =''>
+    <% case @post.dayofweek_id %>
+      <% when 1 then %>
+        <div class = "week">月曜日</div>
+      <% when 2 then %>
+        <div class = "week">火曜日</div>
+      <% when 3 then %>
+        <div class = "week">水曜日</div>
+      <% when 4 then %>
+        <div class = "week">木曜日</div>
+      <% when 5 then %>
+        <div class = "week">金曜日</div>
+      <% when 6 then %>
+        <div class = "week">土曜日</div>
+      <% when 7 then %>
+        <div class = "week">日曜日</div>
+    <% end %>
+  </div>
+
+  <div class=''>
+    <%= @post.starttime %>〜<%= @post.endtime %>
+  </div>
+
+  <div class=''>
+    <%= @post.place %>
+  </div>
+
+  <div class=''>
+    <%= @post.supplement %>
+  </div>
+
+  <div class=''>
+    <%= link_to @post.user.name, user_path(@post.user.id), method: :get %>
+  </div>
+
+</div>
+
+<div class ="">
+  <% if user_signed_in? && current_user.id == @post.user_id %>
+    <div class ="">
+      <%= link_to "編集する", edit_post_path(@post.id) %>
+      <%= link_to "削除する", post_path(@post.id), method: :delete %>
+    </div>
+  <% end %>
+</div>
+
+
+<%= link_to "戻る", posts_path %>

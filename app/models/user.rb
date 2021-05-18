@@ -7,9 +7,11 @@ class User < ApplicationRecord
   with_options presence: true do
     validates :name
     validates :belongs
-    validates :caregory
+    validates :category_id
     validates :hometown
   end
 
+  has_many :posts
+  has_one_attached :image
 
 end
