@@ -39,6 +39,12 @@
     <%= link_to @post.user.name, user_path(@post.user.id), method: :get %>
   </div>
 
+  <% if current_user.favorited_by?(@post.id) %>
+    <td><%= link_to 'いいね', destroy_favorite_path(@post), method: :DELETE %> <%= @post.favorites.count %></td>
+  <% else %>
+    <td><%= link_to 'いいね', create_favorite_path(@post), method: :POST %> <%= @post.favorites.count %></td>
+  <% end %>
+
 </div>
 
 <div class ="">

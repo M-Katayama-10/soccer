@@ -15,5 +15,10 @@ class User < ApplicationRecord
   has_one_attached :image
   has_many :messages, dependent: :destroy
   has_many :entries, dependent: :destroy
+  has_many :favorites, dependent: :destroy
+
+  def favorited_by?(post_id)
+    favorites.where(post_id: post_id).exists?
+  end
 
 end

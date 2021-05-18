@@ -18,7 +18,7 @@ class UsersController < ApplicationController
         @room = Room.new
         @entry = Entry.new
       end
-    end
+    end 
   end
 
   def edit
