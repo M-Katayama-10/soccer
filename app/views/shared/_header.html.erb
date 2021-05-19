@@ -1,0 +1,39 @@
+<div class = "header_main">
+
+  <div class = "header_content">
+    <div class ="header_part">
+      <%= form_with(url: search_posts_path, local: true, method: :get, class: "") do |form| %>
+        <%= form.date_field :keyword, class: "" %>
+        <%= form.submit "検索", class: "" %>
+      <% end %>
+    </div>
+    <% if user_signed_in? %>
+      <div class = "header_part">
+        <%= link_to current_user.name, user_path(current_user), method: :get %>
+      </div>
+      <div class = "header_part">
+        <%= link_to 'Log out👣', destroy_user_session_path, method: :delete, class: "" %>
+      </div>
+      <div class = "header_part">
+        <%= link_to 'Post📮', new_post_path, class: '' %>
+      </div>
+      <div class = "header_part">
+        <%= link_to 'Posts list📄', posts_path, class: '' %>
+      </div>
+    <% else %>
+      <div class = "header_part">
+        <%= link_to "Log in🏃‍♂️", new_user_session_path %>
+      </div>
+      <div class = "header_part">
+        <%= link_to "Sign in🖋", new_user_registration_path %>
+      </div>
+    <% end %>
+
+    <div class = "header_part">
+      <%= link_to 'Home🏠', root_path, class: '' %>
+    </div>
+
+  </div>
+
+</div>
+

@@ -1,57 +1,62 @@
-<div class="">
-  <h2 class="">ユーザー新規登録</h2>
+<div class="registration_new_main">
+  
+  <div class ="registration_new_content">
+    <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
+        
+      <div class="registration_new_part_yu-za-">
+        <%= f.label :name, "ユーザー名" %><br />
+        <%= f.text_field :name, placeholder:"二俣川FC", class:"registration-form-btn" %>
+      </div>
 
-  <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
-  <%= devise_error_messages! %>
+      <div class="registration_new_part">
+        <%= f.label :email, "メールアドレス" %><br />
+        <%= f.email_field :email, placeholder:"futamatagawa@gmail.com", class:"registration-form-btn", autofocus: true, autocomplete: "email" %>
+      </div>
 
-  <div class="">
-    <%= f.label :name, "ユーザー名" %><br />
-    <%= f.text_field :name, id:"" %>
+      <div class="registration_new_part">
+        <%= f.label :password, "パスワード（6文字以上）" %><br />
+        <%= f.password_field :password, class:"registration-form-btn", autocomplete: "new-password" %>
+      </div>
+
+      <div class="registration_new_part">
+        <%= f.label :password, "パスワード再入力" %><br />
+        <%= f.password_field :password_confirmation, class:"registration-form-btn", autocomplete: "new-password" %>
+      </div>
+
+      <div class="registration_new_part">
+        <%= f.label :category_id, "カテゴリー" %><br />
+        <%= f.select :category_id,[["社会人",1],["U-18",2],["U-15",3],["U-12",4]] %>
+      </div>
+
+      <div class="registration_new_part">
+        <%= f.label :belongs, "所属リーグ" %><br />
+        <%= f.text_field :belongs, placeholder:"神奈川県1部", class:"registration-form-btn" %>
+      </div>
+
+      <div class="registration_new_part">
+        <%= f.label :hometown, "ホームタウン" %><br />
+        <%= f.text_field :hometown, placeholder:"横浜市旭区", class:"registration-form-btn" %>
+      </div>
+
+      <div class="registration_new_part">
+        <%= f.label :homepage, "ホームページ" %><br />
+        <%= f.text_field :homepage, placeholder:"http://.....", class:"registration-form-btn" %>
+      </div>
+
+      <div class="registration_new_part">
+        <%= f.label :image, "チーム画像" %><br />
+        <%= f.file_field :image, class:"" %>
+      </div>
+
+      <div class="registration_new_part_sinki">
+        <%= f.submit "新規登録", class:""  %>
+      </div>
+
+    <% end %>
   </div>
 
-  <div class="">
-    <%= f.label :email, "メールアドレス" %><br />
-    <%= f.email_field :email, id:"", autofocus: true, autocomplete: "email" %>
+  <div class ="registration_new_title">
+    <span class ="span">Sign</span> In
   </div>
 
-  <div class="">
-    <%= f.label :password, "パスワード（6文字以上）" %><br />
-    <%= f.password_field :password, id:"", autocomplete: "new-password" %>
-  </div>
-
-  <div class="">
-    <%= f.label :password, "パスワード再入力" %><br />
-    <%= f.password_field :password_confirmation, id:"", autocomplete: "new-password" %>
-  </div>
-
-  <div class="">
-    <%= f.label :category_id, "カテゴリー" %><br />
-    <%= f.select :category_id,[["社会人",1],["U-18",2],["U-15",3],["U-12",4]] %>
-  </div>
-
-  <div class="">
-    <%= f.label :belongs, "所属リーグ" %><br />
-    <%= f.text_field :belongs, id:"" %>
-  </div>
-
-  <div class="">
-    <%= f.label :hometown, "ホームタウン" %><br />
-    <%= f.text_field :hometown, id:"" %>
-  </div>
-
-  <div class="">
-    <%= f.label :homepage, "HP" %><br />
-    <%= f.text_field :homepage, id:"" %>
-  </div>
-
-  <div class="">
-    <%= f.label :image, "チーム画像" %><br />
-    <%= f.file_field :image, id:"" %>
-  </div>
-
-  <div class="">
-    <%= f.submit "新規登録", class: :form__btn  %>
-  </div>
-
-  <% end %>
 </div>

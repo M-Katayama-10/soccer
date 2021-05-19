@@ -1,63 +1,78 @@
-<h2>ユーザー詳細</h2>
-<div class ="">
-  <h2 class="">
-    <%= "#{@user.name}の情報"%>
-  </h2>
+<div class ="user_show_main">
+  <%= render "shared/header" %>
+  <div class ="user_show_content">
+    <div class ="user_show_form">
+      <div class="user_show_name">
+        <%= @user.name %>
+      </div>
 
-  <div class="">
-    <%= "チーム画像：" %>
-    <%= image_tag @user.image, class: '' if @user.image.attached? %>
-  </div>
+      <div class="user_show_image">
+        <%= image_tag @user.image.variant(resize: '300x300'), class: 'plofile_img' if @user.image.attached? %>
+      </div>
 
-  <div class="">
-    <%= "メールアドレス：" %>
-    <%= @user.email %>
-  </div>
+      <div class="user_show_mail">
+        <%= "メールアドレス ：" %>
+        <%= @user.email %>
+      </div>
 
-  <div class="">
-    <%= "カテゴリー：" %>
-    <% case @user.category_id %>
-      <% when 1 then %>
-        <div class = "">社会人</div>
-      <% when 2 then %>
-        <div class = "">U-18</div>
-      <% when 3 then %>
-        <div class = "">U-15</div>
-      <% when 4 then %>
-        <div class = "">U-12</div>
-    <% end %>
-  </div>
-
-  <div class="">
-    <%= "所属リーグ：" %>
-    <%= @user.belongs %>
-  </div>
-
-  <div class="">
-    <%= "ホームタウン：" %>
-    <%= @user.hometown %>
-  </div>
-
-  <div class="">
-    <%= "HP：" %>
-    <%= @user.homepage %>
-  </div>
-
-
- 
-  <%#= link_to "編集する", edit_user_path(current_user), class: "" %>
-
-  <% unless @user.id == current_user.id %>
-    <% if @isRoom == true %>
-      <p class=""><a href="/rooms/<%= @roomId %>" class="">DMへ</a>
-    <% else %>
-      <%= form_for @room do |f| %>
-        <%= fields_for @entry do |e| %>
-          <%= e.hidden_field :user_id, value: @user.id %>
+      <div class="user_show_category">
+        <%= "カテゴリー　　：" %>
+        <% case @user.category_id %>
+          <% when 1 then %>
+            <div class = "">社会人</div>
+          <% when 2 then %>
+            <div class = "">U-18</div>
+          <% when 3 then %>
+            <div class = "">U-15</div>
+          <% when 4 then %>
+            <div class = "">U-12</div>
         <% end %>
-        <%= f.submit "DMする", class:""%>
-      <% end %>
-    <% end %>
-  <% end %>
+      </div>
 
+      <div class="user_show_belongs">
+        <%= "所属リーグ　　：" %>
+        <%= @user.belongs %>
+      </div>
+
+      <div class="user_show_hometown">
+        <%= "ホームタウン　：" %>
+        <%= @user.hometown %>
+      </div>
+
+      <div class="user_show_homepage">
+        <%= "ホームページ　：" %>
+        <a class="" href = "<%= @user.homepage %>">
+          <%= @user.homepage %>
+        </a>
+      </div>
+
+      <% if @user.id == current_user.id %>
+        <div class ="user_show_edit_btn">
+          <%= link_to "編集する", edit_user_path(current_user), class: "" %>
+        </div>
+      <% end %>
+
+      <div class ="user_show_DM_btn">
+        <% unless @user.id == current_user.id %>
+          <% if @isRoom == true %>
+            <div class="user_show_to_DM_page">
+              <a href="/rooms/<%= @roomId %>" class="">DMページへ</a>
+            </div>
+          <% else %>
+            <%= form_for @room do |f| %>
+              <%= fields_for @entry do |e| %>
+                <%= e.hidden_field :user_id, value: @user.id %>
+              <% end %>
+              <%= f.submit "DMする", class:"user_show_submit"%>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+
+    </div>
+
+    <div class ="user_show_title">
+      User<span class ="span"> Information</span>
+    </div>
+  </div>
 </div>

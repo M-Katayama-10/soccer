@@ -1,34 +1,33 @@
-<h1>DM</h1>
+<div class ="room_main">
+  <%= render "shared/header" %>
 
-<h4>参加者</h4>
-<% @entries.each do |e| %>
-  <div class="">
-  <strong>
-    <a class="" href="/users/<%= e.user.id %>">
-      <%= e.user.name %>さん
-    </a>
-  </strong>
+  <div class="room_entry">
+    <% @entries.each do |e| %>
+      <a class="room_users" href="/users/<%= e.user.id %>">
+        　　<%= e.user.name %>　
+      </a>
+    <% end %>
   </div>
-<% end %>
-<hr>
-<div class="">
-  <div class="">
-    <% if @messages.present? %>
-      <% @messages.each do |m| %>
-        <div class="">
-          <div class=""> <strong><%= m.content %></strong> <br>
-          <small>by <strong><a href="/users/<%= m.user_id %>"><%= m.user.name %>さん</a></strong></small>
+  <div class="room_message_submit">
+    <div class="room_message_all">
+      <% if @messages.present? %>
+        <% @messages.each do |m| %>
+          <div class="room_message">
+            <div class ="room_message_text"> 
+              <a class="room_message_by" href="/users/<%= m.user_id %>"><%= m.user.name %>　<%= m.created_at.to_s(:datetime_jp) %></a> <br>
+              <%= m.content %>
+            </div>
           </div>
-        </div>
+        <% end %>
       <% end %>
-    <% end %>
-  </div>
-  <div class="">
-    <%= form_for @message do |f| %>
-      <%= f.text_field :content, placeholder: "メッセージを入力して下さい" , size: 70, class:"" %>
-        <%= f.hidden_field :room_id, value: @room.id %>
-          <%= f.submit "送信",class: ''%>
-    <% end %>
+    </div>
+    <div class="room_submit">
+      <%= form_for @message do |f| %>
+        <%= f.text_field :content, placeholder: "メッセージを入力して下さい" , size: 70, class:"room_submit_form" %>
+          <%= f.hidden_field :room_id, value: @room.id %>
+            <%= f.submit "送信",class: 'room_submit_btn'%>
+      <% end %>
+    </div>
   </div>
 </div>
 

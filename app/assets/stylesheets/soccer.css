@@ -1,0 +1,600 @@
+.header_content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header_main {
+  background-color: rgba(204,204,204,0.65);
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.header_part {
+  margin-left: 30px;
+  margin-right: 60px;
+  font-size      : 15pt; 
+  letter-spacing : 2px; 
+  font-family: 'Andale Mono';
+  text-shadow    : 
+  2px  2px 1px #ffffff,
+ -2px  2px 1px #ffffff,
+  2px -2px 1px #ffffff,
+ -2px -2px 1px #ffffff,
+  2px  0px 1px #ffffff,
+  0px  2px 1px #ffffff,
+ -2px  0px 1px #ffffff,
+  0px -2px 1px #ffffff; 
+}
+
+.mainpage_main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(トップページ.jpeg);
+}
+
+.search_main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(2.jpeg);
+  overflow: scroll;
+}
+
+.search_content {
+  font-family: 'Courier';
+  border: solid 6px #0099FF;
+  border-radius: 10px;
+  height: 120px;
+  margin-top: 180px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  background-color: rgba(51,204,255,0.4);
+  text-shadow    : 
+  2px  2px 1px #ffffff,
+ -2px  2px 1px #ffffff,
+  2px -2px 1px #ffffff,
+ -2px -2px 1px #ffffff,
+  2px  0px 1px #ffffff,
+  0px  2px 1px #ffffff,
+ -2px  0px 1px #ffffff,
+  0px -2px 1px #ffffff; 
+}
+
+.search_content_upper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 17px;
+}
+
+.search_content_under {
+  margin-left: 68px;
+}
+
+.post_index_main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(2.jpeg);
+  overflow: scroll;
+}
+
+.post_index_content {
+  font-family: 'Courier';
+  border: solid 6px #FFCC00;
+  border-radius: 10px;
+  height: 120px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  background-color: rgba(255,153,51,0.25);
+  text-shadow    : 
+  2px  2px 1px #ffffff,
+ -2px  2px 1px #ffffff,
+  2px -2px 1px #ffffff,
+ -2px -2px 1px #ffffff,
+  2px  0px 1px #ffffff,
+  0px  2px 1px #ffffff,
+ -2px  0px 1px #ffffff,
+  0px -2px 1px #ffffff; 
+}
+
+.post_index_content_upper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 17px;
+}
+
+.post_index_content_under {
+  margin-left: 68px;
+  
+}
+
+.registration_new_main {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(サインイン、ログイン.jpeg);
+  display: flex;
+  justify-content: space-around;
+}
+
+.registration_new_content {
+  height: 630px;
+  width: 520px;
+  padding-left: 90px;
+  background-color: rgba(204,204,204,0.65);
+  margin-top: 100px;
+  margin-left: 60px;
+}
+
+.registration_new_title {
+  font-size: 90px;
+  color: white;
+  margin-top: 200px;
+  margin-right: 150px;
+  font-family: 'TsukuARdGothic-Regular';
+  font-weight: bold;
+}
+
+.registration_new_part {
+  margin-bottom: 10px;
+}
+
+.registration_new_part_yu-za- {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.registration_new_part_sinki {
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+.registration-form-btn {
+  width: 340px;
+}
+
+.session_new_main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.session_new_form {
+  background-color: rgba(204,204,204,0.65);
+  width: 350px;
+  height: 300px;
+  margin-right: 100px;
+  margin-top: 200px;
+}
+
+.session_new_title {
+  font-size: 70px;
+  color: white;
+  font-family: 'TsukuARdGothic-Regular';
+  margin-top: 200px;
+  margin-left: 130px;
+  font-weight: bold;
+}
+
+.session_new_mail {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.session_new_pass {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.session_new_login {
+  margin-top: 45px;
+  margin-left: 30px;
+}
+
+.session-form-btn {
+  width: 280px;
+}
+
+.like {
+  margin-right: 0px;
+  color: tomato;
+}
+
+.post_show_main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(2.jpeg);
+}
+
+.post_show_content {
+  font-family: 'Courier';
+  border: solid 6px #00CC66;
+  border-radius: 10px;
+  height: 120px;
+  margin-top: 180px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  background-color: rgba(102,255,204,0.55);
+  text-shadow    : 
+  2px  2px 1px #ffffff,
+ -2px  2px 1px #ffffff,
+  2px -2px 1px #ffffff,
+ -2px -2px 1px #ffffff,
+  2px  0px 1px #ffffff,
+  0px  2px 1px #ffffff,
+ -2px  0px 1px #ffffff,
+  0px -2px 1px #ffffff; 
+}
+
+.post_show_content_upper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 17px;
+}
+
+.post_show_content_under {
+  margin-left: 68px;
+}
+
+.post_show_edit_destroy {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.post_show_edit {
+  font-family: 'Gurmukhi MN';
+  border: solid 2px #FFCC00;
+  border-radius: 10px;
+  background-color: rgba(255,204,153,0.55);
+  padding: 10px;
+  margin-right: 30px;
+  font-size: 20px;
+  text-shadow    : 
+  2px  2px 1px #ffffff,
+ -2px  2px 1px #ffffff,
+  2px -2px 1px #ffffff,
+ -2px -2px 1px #ffffff,
+  2px  0px 1px #ffffff,
+  0px  2px 1px #ffffff,
+ -2px  0px 1px #ffffff,
+  0px -2px 1px #ffffff;
+}
+
+.post_show_destroy {
+  font-family: 'Gurmukhi MN';
+  border: solid 2px #FFCC00;
+  border-radius: 10px;
+  background-color: rgba(255,204,153,0.55);
+  padding: 10px;
+  font-size: 20px;
+  text-shadow    : 
+  2px  2px 1px #ffffff,
+ -2px  2px 1px #ffffff,
+  2px -2px 1px #ffffff,
+ -2px -2px 1px #ffffff,
+  2px  0px 1px #ffffff,
+  0px  2px 1px #ffffff,
+ -2px  0px 1px #ffffff,
+  0px -2px 1px #ffffff;
+}
+
+.post_new_main {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(サインイン、ログイン.jpeg);
+}
+
+.post_new_content {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.post_new_form {
+  background-color: rgba(204,204,204,0.65);
+  width: 350px;
+  height: 400px;
+}
+
+.post_new_title {
+  font-size: 70px;
+  color: #ffffff;
+  font-family: 'TsukuARdGothic-Regular';
+  font-weight: bold;
+  margin-left: 200px;
+}
+
+.post_new_days {
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.post_new_dayofweek {
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.post_new_time {
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.post_new_place {
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.post_new_supplement {
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.post_new_submit {
+  margin-top: 35px;
+  margin-left: 10px;
+}
+
+.post_new_btn {
+  width: 320px;
+}
+
+.user_edit_main {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(サインイン、ログイン.jpeg);
+}
+
+.user_edit_content {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.user_edit_form {
+  background-color: rgba(204,204,204,0.65);
+  padding-left: 15px;
+  margin-right: 150px;
+}
+
+.user_edit_title {
+  font-size: 70px;
+  color: #ffffff;
+  font-family: 'TsukuARdGothic-Regular';
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.user_edit_btn {
+  width: 340px;
+}
+
+.user_edit_name {
+  margin-top: 10px;
+}
+
+.user_edit_mail {
+  margin-top: 10px;
+}
+
+.user_edit_category {
+  margin-top: 10px;
+}
+
+.user_edit_belongs {
+  margin-top: 10px;
+}
+
+.user_edit_hometown {
+  margin-top: 10px;
+}
+
+.user_edit_homepage {
+  margin-top: 10px;
+}
+
+.user_edit_image {
+  margin-top: 10px;
+}
+
+.user_edit_submit {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.user_show_main {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(サインイン、ログイン.jpeg);
+}
+
+.user_show_content {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.user_show_form {
+  background-color: rgba(204,204,204,0.65);
+  width: 380px;
+  padding-left: 15px;
+  margin-right: 100px;
+}
+
+.user_show_title {
+  font-size: 70px;
+  color: #ffffff;
+  font-family: 'TsukuARdGothic-Regular';
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.user_show_name {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.user_show_image {
+  margin-top: 15px;
+}
+
+.user_show_mail {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.user_show_category {
+  margin-top: 15px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.user_show_belongs {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.user_show_hometown {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.user_show_homepage {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.user_show_edit_btn {
+  margin-top: 20px;
+  border: 1px solid ;
+  padding: 7px;
+  width: 80px;
+  border-radius: 10px;
+  background-color: darkgray;
+  margin-left: 135px;
+}
+
+.user_show_DM_btn {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.plofile_img {
+  margin-left: 80px;
+  width:  200px;
+  height: 200px;
+  border-radius: 50%; 
+  background-position: center center;
+}
+
+.user_show_submit {
+  margin-bottom: 15px;
+  margin-left: 130px;
+  padding: 5px;
+}
+
+.user_show_to_DM_page {
+  margin-bottom: 15px;
+  border: 1px solid ;
+  padding: 7px;
+  width: 110px;
+  border-radius: 10px;
+  background-color: darkgray;
+  margin-left: 110px;
+}
+
+.span {
+  color: coral;
+}
+
+.room_main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #CCFFFF		;
+	background-size: 10px 10px;
+	background-image:
+	 linear-gradient(45deg,  #CCFFCC	 25%, #CCFFCC	 25%, transparent 25%,
+	  transparent 75%, #CCFFCC 75%, #CCFFCC	 75%),
+	 linear-gradient(-45deg, #CCFFCC	 25%, #CCFFCC	 25%, transparent 25%,
+	  transparent 75%, #CCFFCC	 75%, #CCFFCC	 75%);
+}
+
+.room_entry {
+  border-bottom: 6px solid #FF9933;
+  height: 55px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 26px;
+  margin-top: 10px;
+  font-family: 'DIN Alternate';
+  text-shadow    : 
+       2px  2px 1px #99ccff,
+      -2px  2px 1px #99ccff,
+       2px -2px 1px #99ccff,
+      -2px -2px 1px #99ccff,
+       2px  0px 1px #99ccff,
+       0px  2px 1px #99ccff,
+      -2px  0px 1px #99ccff,
+       0px -2px 1px #99ccff;  
+}
+
+
+.room_message_all {
+  height: 605px;
+  overflow: scroll;
+}
+
+.room_message {
+  width: 1350px;
+  margin-top: 20px;
+  position: relative;
+  margin: 2em 0 2em 40px;
+  padding: 8px 15px;
+  background: #33FF99;
+  border-radius: 30px;
+}
+
+.room_message:before{
+  font-family: "FontAwesome";
+  content: "\025cf";
+  position: absolute;
+  font-size: 15px;
+  left: -40px;
+  bottom: 0;
+  color: #33FF99;
+}
+
+.room_message:after{
+  content: "\025cf";
+  position: absolute;
+  font-size: 23px;
+  left: -23px;
+  bottom: 0;
+  color: #33FF99;
+}
+
+.room_message_by {
+  font-size: 13px;
+}
+
+.room_message_text {
+  font-size: 23px;
+}
+
+.room_submit {
+  height: 49px;
+}
+
+.room_submit_btn {
+  height: 40px;
+  width: 50px;
+}
+
+.room_submit_form {
+  height: 40px;
+  margin-left: 330px;
+  margin-top: 5px;
+}

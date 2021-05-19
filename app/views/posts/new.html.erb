@@ -1,34 +1,41 @@
-<h2>投稿作成</h2>
-<div class ="">
-  <%= form_with model: @post, local: true do |f|%>
+<div class ="post_new_main">
+  <%= render "shared/header" %>
+  <div class ="post_new_content">
+    <div class ="post_new_form">
+      <%= form_with model: @post, local: true do |f|%>
 
-    <div class="">
-      <%= f.label :days, "日付" %><br />
-      <%= f.date_field :days %>
-    </div>
+        <div class="post_new_days">
+          <%= f.label :days, "日付" %><br />
+          <%= f.date_field :days %>
+        </div>
 
-    <div class="">
-      <div class="">曜日</div>
-      <%= f.select :dayofweek_id,[["月曜日",1],["火曜日",2],["水曜日",3],["木曜日",4],["金曜日",5],["土曜日",6],["日曜日",7]] %>
-    </div>
+        <div class="post_new_dayofweek">
+          <div class="">曜日</div>
+          <%= f.select :dayofweek_id,[["月曜日",1],["火曜日",2],["水曜日",3],["木曜日",4],["金曜日",5],["土曜日",6],["日曜日",7]] %>
+        </div>
 
-    <div class="">
-      <%= f.label :time, "時間帯" %><br />
-      <%= f.time_field :starttime %>〜<%= f.time_field :endtime %>
-    </div>
+        <div class="post_new_time">
+          <%= f.label :time, "時間帯" %><br />
+          <%= f.time_field :starttime %>〜<%= f.time_field :endtime %>
+        </div>
 
-    <div class="">
-      <%= f.label :place, "会場" %><br />
-      <%= f.text_field :place, placeholder:"二俣川公園グラウンド", class: :form__text, id:"" %>
-    </div>
+        <div class="post_new_place">
+          <%= f.label :place, "会場" %><br />
+          <%= f.text_field :place, placeholder:"二俣川公園グラウンド", class:"post_new_btn", id:"" %>
+        </div>
 
-    <div class="">
-      <%= f.label :supplement, "補足" %><br />
-      <%= f.text_field :supplement, placeholder:"40分×3本", class: :form__text, id:"" %>
-    </div>
+        <div class="post_new_supplement">
+          <%= f.label :supplement, "補足" %><br />
+          <%= f.text_field :supplement, placeholder:"40分×3本", class:"post_new_btn", id:"" %>
+        </div>
 
-    <div class="">
-      <%= f.submit "投稿する", class: :form__btn  %>
+        <div class="post_new_submit">
+          <%= f.submit "投稿する", class:""  %>
+        </div>
+      <% end %>
     </div>
-  <% end %>
+    <div class ="post_new_title">
+      <span class ="span">New</span> Post
+    </div>
+  </div>
 </div>

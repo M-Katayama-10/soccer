@@ -1,52 +1,65 @@
-<h1>投稿一覧</h1>
-<% @posts.each do |post| %>
-  <div class ="">
-    <div class = "">
-      <%= link_to post.days, post_path(post.id) %>
+<div class ="post_index_main">
+  <%= render "shared/header" %>
+
+  <% @posts.each do |post| %>
+    <div class ="post_index_content">
+      <div class ="post_index_content_upper">
+        <div class = "">
+          <%= link_to post.days, post_path(post.id) %>
+        </div>
+
+        <div class =''>
+          <% case post.dayofweek_id %>
+            <% when 1 then %>
+              <div class = "week">月曜日</div>
+            <% when 2 then %>
+              <div class = "week">火曜日</div>
+            <% when 3 then %>
+              <div class = "week">水曜日</div>
+            <% when 4 then %>
+              <div class = "week">木曜日</div>
+            <% when 5 then %>
+              <div class = "week">金曜日</div>
+            <% when 6 then %>
+              <div class = "week">土曜日</div>
+            <% when 7 then %>
+              <div class = "week">日曜日</div>
+          <% end %>
+        </div>
+
+        <div class=''>
+          <% if post.starttime.present? %>
+            <% if post.endtime.present?%>
+              <%= "時間：#{post.starttime}" %>〜<%= post.endtime %>
+            <% else %>
+              <%= "時間：#{post.starttime}" %>〜<%= "　　　"%>
+            <% end %>
+          <% else %>
+            <%= "　　　　　　　　　　" %>
+          <% end %>
+        </div>
+
+        <div class=''>
+          <%= link_to post.user.name, user_path(post.user.id), method: :get %>
+        </div>
+
+        <div class=''>
+          <%= post.place %>
+        </div>
+        
+        <div class ="like">
+          <% if current_user.favorited_by?(post.id) %>
+            <td><%= link_to '👍', destroy_favorite_path(post), method: :DELETE %> <%= post.favorites.count %></td>
+          <% else %>
+            <td><%= link_to '👍', create_favorite_path(post), method: :POST %> <%= post.favorites.count %></td>
+          <% end %>
+        </div>
+      </div>
+
+      <div class='post_index_content_under'>
+        <%= post.supplement %>
+      </div>
+
     </div>
-
-    <div class =''>
-      <% case post.dayofweek_id %>
-        <% when 1 then %>
-          <div class = "week">月曜日</div>
-        <% when 2 then %>
-          <div class = "week">火曜日</div>
-        <% when 3 then %>
-          <div class = "week">水曜日</div>
-        <% when 4 then %>
-          <div class = "week">木曜日</div>
-        <% when 5 then %>
-          <div class = "week">金曜日</div>
-        <% when 6 then %>
-          <div class = "week">土曜日</div>
-        <% when 7 then %>
-          <div class = "week">日曜日</div>
-      <% end %>
-    </div>
-
-    <div class=''>
-      <%= post.starttime %>〜<%= post.endtime %>
-    </div>
-
-    <div class=''>
-      <%= post.place %>
-    </div>
-
-    <div class=''>
-      <%= post.supplement %>
-    </div>
-
-    <div class=''>
-      <%= post.user.name %>
-    </div>
-
-    <% if current_user.favorited_by?(post.id) %>
-      <td><%= link_to 'いいね', destroy_favorite_path(post), method: :DELETE %> <%= post.favorites.count %></td>
-    <% else %>
-      <td><%= link_to 'いいね', create_favorite_path(post), method: :POST %> <%= post.favorites.count %></td>
-    <% end %>
-
-  </div>
-<% end %>
-
-<%= link_to "戻る", root_path %>
+  <% end %>
+</div>

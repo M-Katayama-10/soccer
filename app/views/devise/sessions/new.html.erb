@@ -1,27 +1,27 @@
-<div class="">
-  <div class="">
-    <div class="">
-      <h2 class="">ユーザーログイン</h2>
-        <div class=''>
-          <%= flash[:notice] %>
-          <%= flash[:alert] %>
-        </div>
-        <%= form_with model: @user, url: user_session_path, local: true do |f| %>
+<div class="registration_new_main">
+  <div class="session_new_main">
+    <div class ="session_new_form">
+      <%= form_with model: @user, url: user_session_path, local: true do |f| %>
 
-        <div class="">
+        <div class="session_new_mail">
           <%= f.label :email, "" %><br />
-          <%= f.email_field :email, id:"", autofocus: true, autocomplete: "email" %>
+          <%= f.email_field :email, class:"session-form-btn", autofocus: true, autocomplete: "email" %>
         </div>
 
-        <div class="">
+        <div class="session_new_pass">
           <%= f.label :password, "パスワード（6文字以上）" %><br />
-          <%= f.password_field :password, id:"", autocomplete: "current-password" %>
+          <%= f.password_field :password, class:"session-form-btn", autocomplete: "current-password" %>
         </div>
 
-        <div class="">
+        <div class="session_new_login">
           <%= f.submit "ログイン", class: :form__btn %>
         </div>
       <% end %>
     </div>
+
+    <div class ="session_new_title">
+      <span class ="span">Log</span> In
+    </div>
+
   </div>
 </div>

@@ -1,46 +1,53 @@
-<h2>ユーザー編集</h2>
-<div class="">
+<div class ="user_edit_main">
+  <%= render "shared/header" %>
+  <div class ="user_edit_content">
+    <div class="user_edit_form">
+      <%= form_with model: current_user, local: true do |f| %>
 
-  <%= form_with model: current_user, local: true do |f| %>
+      <div class="user_edit_name">
+        <%= f.label :name, "ユーザー名" %><br />
+        <%= f.text_field :name, class:"user_edit_btn", id:"" %>
+      </div>
 
-  <div class="">
-    <%= f.label :name, "ユーザー名" %><br />
-    <%= f.text_field :name, id:"" %>
+      <div class="user_edit_mail">
+        <%= f.label :email, "メールアドレス" %><br />
+        <%= f.email_field :email, class:"user_edit_btn", id:"", autofocus: true, autocomplete: "email" %>
+      </div>
+
+      <div class="user_edit_category">
+        <%= f.label :category_id, "カテゴリー" %><br />
+        <%= f.select :category_id,[["社会人",1],["U-18",2],["U-15",3],["U-12",4]] %>
+      </div>
+
+      <div class="user_edit_belongs">
+        <%= f.label :belongs, "所属リーグ" %><br />
+        <%= f.text_field :belongs, class:"user_edit_btn", id:"" %>
+      </div>
+
+      <div class="user_edit_hometown">
+        <%= f.label :hometown, "ホームタウン" %><br />
+        <%= f.text_field :hometown, class:"user_edit_btn", id:"" %>
+      </div>
+
+      <div class="user_edit_homepage">
+        <%= f.label :homepage, "ホームページ" %><br />
+        <%= f.text_field :homepage, class:"user_edit_btn", id:"" %>
+      </div>
+
+      <div class="user_edit_image">
+        <%= f.label :image, "チーム画像" %><br />
+        <%= f.file_field :image, id:"" %>
+      </div>
+
+      <div class="user_edit_submit">
+        <%= f.submit "更新する", class:"user_edit_btn", class: :form__btn  %>
+      </div>
+
+      <% end %>
+    </div>
+
+    <div class ="user_edit_title">
+      <span class ="span">Edit</span> User
+    </div>
   </div>
-
-  <div class="">
-    <%= f.label :email, "メールアドレス" %><br />
-    <%= f.email_field :email, id:"", autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="">
-    <%= f.label :category_id, "カテゴリー" %><br />
-    <%= f.select :category_id,[["社会人",1],["U-18",2],["U-15",3],["U-12",4]] %>
-  </div>
-
-  <div class="">
-    <%= f.label :belongs, "所属リーグ" %><br />
-    <%= f.text_field :belongs, id:"" %>
-  </div>
-
-  <div class="">
-    <%= f.label :hometown, "ホームタウン" %><br />
-    <%= f.text_field :hometown, id:"" %>
-  </div>
-
-  <div class="">
-    <%= f.label :homepage, "HP" %><br />
-    <%= f.text_field :homepage, id:"" %>
-  </div>
-
-  <div class="">
-    <%= f.label :image, "チーム画像" %><br />
-    <%= f.file_field :image, id:"" %>
-  </div>
-
-  <div class="">
-    <%= f.submit "更新する", class: :form__btn  %>
-  </div>
-
-  <% end %>
 </div>
