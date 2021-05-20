@@ -30,7 +30,7 @@
 .mainpage_main {
   width: 100vw;
   height: 100vh;
-  background-image: url(トップページ.jpeg);
+  background-image: url( トップページ.jpeg);
 }
 
 .search_main {
@@ -112,7 +112,7 @@
 .registration_new_main {
   height: 100vh;
   width: 100vw;
-  background-image: url(サインイン、ログイン.jpeg);
+  background-image: url( サインイン、ログイン.jpeg);
   display: flex;
   justify-content: space-around;
 }
@@ -282,7 +282,7 @@
 .post_new_main {
   height: 100vh;
   width: 100vw;
-  background-image: url(サインイン、ログイン.jpeg);
+  background-image: url( サインイン、ログイン.jpeg);
 }
 
 .post_new_content {
@@ -342,7 +342,7 @@
 .user_edit_main {
   height: 100vh;
   width: 100vw;
-  background-image: url(サインイン、ログイン.jpeg);
+  background-image: url( サインイン、ログイン.jpeg);
 }
 
 .user_edit_content {
@@ -405,7 +405,7 @@
 .user_show_main {
   height: 100vh;
   width: 100vw;
-  background-image: url(サインイン、ログイン.jpeg);
+  background-image: url( サインイン、ログイン.jpeg);
 }
 
 .user_show_content {
