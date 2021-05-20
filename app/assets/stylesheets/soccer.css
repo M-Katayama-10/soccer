@@ -36,7 +36,7 @@
 .search_main {
   width: 100vw;
   height: 100vh;
-  background-image: url(2.jpeg);
+  background-image: url(メッシ.jpeg);
   overflow: scroll;
 }
 
@@ -73,20 +73,20 @@
 .post_index_main {
   width: 100vw;
   height: 100vh;
-  background-image: url(2.jpeg);
+  background-image: url(メッシ.jpeg);
   overflow: scroll;
 }
 
 .post_index_content {
   font-family: 'Courier';
-  border: solid 6px #FFCC00;
+  border: solid 6px #FF9933;
   border-radius: 10px;
   height: 120px;
   margin-top: 40px;
   margin-bottom: 50px;
   font-size: 20px;
-  background-color: rgba(255,255,102,0.55);
-  /*text-shadow    : 
+  background-color: rgba(255,204,51,0.55);
+  text-shadow    : 
   2px  2px 1px #ffffff,
  -2px  2px 1px #ffffff,
   2px -2px 1px #ffffff,
@@ -94,7 +94,7 @@
   2px  0px 1px #ffffff,
   0px  2px 1px #ffffff,
  -2px  0px 1px #ffffff,
-  0px -2px 1px #ffffff; */
+  0px -2px 1px #ffffff; 
 }
 
 .post_index_content_upper {
@@ -202,7 +202,7 @@
 .post_show_main {
   width: 100vw;
   height: 100vh;
-  background-image: url(2.jpeg);
+  background-image: url(メッシ.jpeg);
 }
 
 .post_show_content {
