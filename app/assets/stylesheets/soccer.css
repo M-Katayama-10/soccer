@@ -85,8 +85,8 @@
   margin-top: 40px;
   margin-bottom: 50px;
   font-size: 20px;
-  background-color: rgba(255,153,51,0.25);
-  text-shadow    : 
+  background-color: rgba(255,255,102,0.55);
+  /*text-shadow    : 
   2px  2px 1px #ffffff,
  -2px  2px 1px #ffffff,
   2px -2px 1px #ffffff,
@@ -94,7 +94,7 @@
   2px  0px 1px #ffffff,
   0px  2px 1px #ffffff,
  -2px  0px 1px #ffffff,
-  0px -2px 1px #ffffff; 
+  0px -2px 1px #ffffff; */
 }
 
 .post_index_content_upper {
@@ -106,7 +106,7 @@
 
 .post_index_content_under {
   margin-left: 68px;
-  
+  margin-right: 68px;
 }
 
 .registration_new_main {
@@ -244,9 +244,9 @@
 
 .post_show_edit {
   font-family: 'Gurmukhi MN';
-  border: solid 2px #FFCC00;
+  border: solid 2px #00CC66;
   border-radius: 10px;
-  background-color: rgba(255,204,153,0.55);
+  background-color: rgba(102,255,204,0.55);
   padding: 10px;
   margin-right: 30px;
   font-size: 20px;
@@ -263,9 +263,9 @@
 
 .post_show_destroy {
   font-family: 'Gurmukhi MN';
-  border: solid 2px #FFCC00;
+  border: solid 2px #00CC66;
   border-radius: 10px;
-  background-color: rgba(255,204,153,0.55);
+  background-color: rgba(102,255,204,0.55);
   padding: 10px;
   font-size: 20px;
   text-shadow    : 
@@ -597,4 +597,31 @@
   height: 40px;
   margin-left: 330px;
   margin-top: 5px;
+}
+
+.google_map {
+  height: 550px;
+  width: 700px;
+}
+
+.map_all {
+  width: 700px;
+  height: 600px;
+  color: #ffffff;
+  margin-left: 170px;
+  margin-top: 110px;
+}
+
+.main_content {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.main_title {
+  font-size: 80px;
+  color: white;
+  font-family: 'TsukuARdGothic-Regular';
+  font-weight: bold;
+  margin-left: 200px;
+  margin-top: 70px;
 }
