@@ -74,18 +74,22 @@
   width: 100vw;
   height: 100vh;
   background-image: url(メッシ.jpeg);
-  overflow: scroll;
+  
 }
 
 .post_index_content {
-  font-family: 'Courier';
   border: solid 6px #FF9933;
-  border-radius: 10px;
-  height: 120px;
-  margin-top: 40px;
+  font-family: 'Courier';
+  height: 320px;
+  width: 380px;
   margin-bottom: 50px;
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
   font-size: 20px;
   background-color: rgba(255,204,51,0.55);
+  border-radius: 10px;
+  padding-top: 5px;
   text-shadow    : 
   2px  2px 1px #ffffff,
  -2px  2px 1px #ffffff,
@@ -94,19 +98,65 @@
   2px  0px 1px #ffffff,
   0px  2px 1px #ffffff,
  -2px  0px 1px #ffffff,
-  0px -2px 1px #ffffff; 
+  0px -2px 1px #ffffff;
 }
 
-.post_index_content_upper {
+.post_index_days {
+  padding-left: 15px;
+  font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN';
+  text-shadow    : 
+       2px  2px 1px #ff9999,
+      -2px  2px 1px #ff9999,
+       2px -2px 1px #ff9999,
+      -2px -2px 1px #ff9999,
+       2px  0px 1px #ff9999,
+       0px  2px 1px #ff9999,
+      -2px  0px 1px #ff9999,
+       0px -2px 1px #ff9999; 
+}
+
+.good {
+  text-shadow: none;
+}
+
+.post_index_dayofweek {
+  padding-left: 15px;
+  background-color: rgba(255,204,102,0.45);
+}
+
+.post_index_name {
+  padding-left: 15px;
+  background-color: rgba(255,204,102,0.45);
+}
+
+.like {
+  padding-left: 15px;
+  background-color: rgba(255,204,102,0.45);
+  color: tomato;
+}
+
+.post_show_like {
+  color: tomato;
+}
+
+.post_index_time {
+  padding-left: 15px;
+}
+
+.post_index_place {
+  padding-left: 15px;
+}
+
+.post_index_supplement {
+  padding-left: 15px;
+}
+
+.post_index_all {
+  overflow: scroll;
+  height: 700px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 17px;
-}
-
-.post_index_content_under {
-  margin-left: 68px;
-  margin-right: 68px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .registration_new_main {
@@ -192,11 +242,6 @@
 
 .session-form-btn {
   width: 280px;
-}
-
-.like {
-  margin-right: 0px;
-  color: tomato;
 }
 
 .post_show_main {
@@ -601,8 +646,9 @@
 }
 
 .google_map {
-  height: 550px;
-  width: 700px;
+  height: 505px;
+  width: 654px;
+  border: solid 2px black;
 }
 
 .map_description {
@@ -621,7 +667,7 @@
   width: 700px;
   height: 600px;
   color: #ffffff;
-  margin-left: 170px;
+  margin-left: 140px;
   margin-top: 110px;
 }
 
@@ -631,32 +677,32 @@
 }
 
 .main_title {
-  font-size: 80px;
+  font-size: 90px;
   color: white;
   font-family: 'TsukuARdGothic-Regular';
   font-weight: bold;
   margin-left: 200px;
-  margin-top: 70px;
+  margin-top: 20px;
   text-shadow    : 
-       1px  1px 1px #4dffa6,
-      -1px  1px 1px #4dffa6,
-       1px -1px 1px #4dffa6,
-      -1px -1px 1px #4dffa6,
-       1px  0px 1px #4dffa6,
-       0px  1px 1px #4dffa6,
-      -1px  0px 1px #4dffa6,
-       0px -1px 1px #4dffa6; 
+       2px  2px 1px #1a1aff,
+      -2px  2px 1px #1a1aff,
+       2px -2px 1px #1a1aff,
+      -2px -2px 1px #1a1aff,
+       2px  0px 1px #1a1aff,
+       0px  2px 1px #1a1aff,
+      -2px  0px 1px #1a1aff,
+       0px -2px 1px #1a1aff;  
 }
 
 .main_span {
   color: tomato;
   text-shadow    : 
-       1px  1px 1px #ff7f7f,
-      -1px  1px 1px #ff7f7f,
-       1px -1px 1px #ff7f7f,
-      -1px -1px 1px #ff7f7f,
-       1px  0px 1px #ff7f7f,
-       0px  1px 1px #ff7f7f,
-      -1px  0px 1px #ff7f7f,
-       0px -1px 1px #ff7f7f; 
+  2px  2px 1px #ffffff,
+ -2px  2px 1px #ffffff,
+  2px -2px 1px #ffffff,
+ -2px -2px 1px #ffffff,
+  2px  0px 1px #ffffff,
+  0px  2px 1px #ffffff,
+ -2px  0px 1px #ffffff,
+  0px -2px 1px #ffffff; 
 }

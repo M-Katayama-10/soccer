@@ -46,11 +46,11 @@
         <%= @post.place %>
       </div>
       
-      <div class ="like">
+      <div class ="post_show_like">
         <% if current_user.favorited_by?(@post.id) %>
-          <td><%= link_to '👍', destroy_favorite_path(@post), method: :DELETE %> <%= @post.favorites.count %></td>
+          <span class ="good"><%= link_to '👍', destroy_favorite_path(@post), method: :DELETE %></span> <%= @post.favorites.count %>
         <% else %>
-          <td><%= link_to '👍', create_favorite_path(@post), method: :POST %> <%= @post.favorites.count %></td>
+          <span class ="good"><%= link_to '👍', create_favorite_path(@post), method: :POST %></span> <%= @post.favorites.count %>
         <% end %>
       </div>
     </div>
