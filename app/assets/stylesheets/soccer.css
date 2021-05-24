@@ -558,7 +558,7 @@
 
 .room_main {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: #CCFFFF		;
 	background-size: 10px 10px;
 	background-image:
