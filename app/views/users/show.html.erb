@@ -7,7 +7,9 @@
       </div>
 
       <div class="user_show_image">
-        <%= image_tag @user.image.variant(resize: '300x300'), class: 'plofile_img' if @user.image.attached? %>
+        <% if @user.image.attached? %>
+          <%= image_tag @user.image.variant(resize: '300x300'), class: 'plofile_img' %>
+        <% end %>
       </div>
 
       <div class="user_show_mail">

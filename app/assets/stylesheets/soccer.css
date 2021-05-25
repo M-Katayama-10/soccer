@@ -30,7 +30,7 @@
 .mainpage_main {
   width: 100vw;
   height: 100vh;
-  background-image: url(トップページ.jpeg);
+  background-image: url(anfield.jpeg);
 }
 
 .search_main {
@@ -678,31 +678,31 @@
 
 .main_title {
   font-size: 90px;
-  color: white;
+  color: #CCFFCC;
   font-family: 'TsukuARdGothic-Regular';
   font-weight: bold;
   margin-left: 200px;
   margin-top: 20px;
   text-shadow    : 
-       2px  2px 1px #1a1aff,
-      -2px  2px 1px #1a1aff,
-       2px -2px 1px #1a1aff,
-      -2px -2px 1px #1a1aff,
-       2px  0px 1px #1a1aff,
-       0px  2px 1px #1a1aff,
-      -2px  0px 1px #1a1aff,
-       0px -2px 1px #1a1aff;  
+  2px  2px 1px #00b300,
+ -2px  2px 1px #00b300,
+  2px -2px 1px #00b300,
+ -2px -2px 1px #00b300,
+  2px  0px 1px #00b300,
+  0px  2px 1px #00b300,
+ -2px  0px 1px #00b300,
+  0px -2px 1px #00b300; 
 }
 
 .main_span {
-  color: tomato;
+  color: #ff7f7f;
   text-shadow    : 
-  2px  2px 1px #ffffff,
- -2px  2px 1px #ffffff,
-  2px -2px 1px #ffffff,
- -2px -2px 1px #ffffff,
-  2px  0px 1px #ffffff,
-  0px  2px 1px #ffffff,
- -2px  0px 1px #ffffff,
-  0px -2px 1px #ffffff; 
+  2px  2px 1px bisque,
+ -2px  2px 1px bisque,
+  2px -2px 1px bisque,
+ -2px -2px 1px bisque,
+  2px  0px 1px bisque,
+  0px  2px 1px bisque,
+ -2px  0px 1px bisque,
+  0px -2px 1px bisque; 
 }
