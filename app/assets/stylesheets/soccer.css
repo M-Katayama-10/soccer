@@ -683,7 +683,7 @@
   font-weight: bold;
   margin-left: 200px;
   margin-top: 20px;
-  text-shadow    : 
+  /*text-shadow    : 
   2px  2px 1px #ff7f7f,
  -2px  2px 1px #ff7f7f,
   2px -2px 1px #ff7f7f,
@@ -691,12 +691,12 @@
   2px  0px 1px #ff7f7f,
   0px  2px 1px #ff7f7f,
  -2px  0px 1px #ff7f7f,
-  0px -2px 1px #ff7f7f;   
+  0px -2px 1px #ff7f7f;   */
 }
 
 .main_span {
-  color: #ff7f7f;
-  text-shadow    : 
+  color: tomato;
+  /*text-shadow    : 
   2px  2px 1px bisque,
  -2px  2px 1px bisque,
   2px -2px 1px bisque,
@@ -704,5 +704,5 @@
   2px  0px 1px bisque,
   0px  2px 1px bisque,
  -2px  0px 1px bisque,
-  0px -2px 1px bisque; 
+  0px -2px 1px bisque; */
 }
