@@ -54,95 +54,67 @@ https://soccer-matching-app.herokuapp.com/
 # 📖利用方法
 
 ### 🔶ログインしていないユーザーはヘッダーに"Sign In"と"Log in"ボタンがある
-<br>
-<br>
+
 
 ### 🔶"Sign In"を押すと新規登録ページへ遷移する
-<br>
-<br>
+
 
 ### 🔶新規登録フォームを入力後実行するとトップページへ遷移する
-[![Image from Gyazo](https://i.gyazo.com/ca4e5669d02f35e58392fd914b160c53.gif)](https://gyazo.com/ca4e5669d02f35e58392fd914b160c53)
-<br>
-<br>
+
 
 ### 🔶"Home"をクリックするとトップページへ遷移する
-<br>
-<br>
+
 
 ### 🔶"Post list"をクリックすると投稿一覧ページへ遷移する
-<br>
-<br>
+
 
 ### 🔶投稿一覧ページでは各投稿を日付と時間が新しい順に閲覧できる
-<br>
-<br>
+
 
 ### 🔶各投稿の日付をクリックすると投稿詳細ページに遷移する
-<br>
-<br>
+
 
 ### 🔶投稿者名をクリックすると投稿者詳細ページへ遷移する
-<br>
-<br>
+
 
 ### 🔶ログインフォームを入力し、実行するとトップページへ遷移する
-[![Image from Gyazo](https://i.gyazo.com/b2118c2e4374f7e75a63811a4da712f1.gif)](https://gyazo.com/b2118c2e4374f7e75a63811a4da712f1)
-<br>
-<br>
+
 
 ### 🔶ログイン後ヘッダーに"ユーザー名"と"Log out"と"Post"が現れる
-<br>
-<br>
+
 
 ### 🔶ヘッダーの"ユーザー名"をクリックするとユーザー編集ページへ遷移する
-<br>
-<br>
+
 
 ### 🔶ヘッダーの"Log out"をクリックでログアウトし、トップページに遷移する
-<br>
-<br>
+
 
 ### 🔶"Post"をクリックすると投稿ページに遷移する
-<br>
-<br>
+
 
 ### 🔶投稿ページで必要事項を入力し、実行すると投稿一覧ページへ遷移する
-[![Image from Gyazo](https://i.gyazo.com/e911e901927d58bed966d013a210da43.gif)](https://gyazo.com/e911e901927d58bed966d013a210da43)
-<br>
-<br>
+
 
 ### 🔶投稿詳細ページで投稿者にのみ"編集"、"削除"ボタンが現れる
-<br>
-<br>
+
 
 ### 🔶"編集"をクリックすると投稿編集ページへ遷移する
-<br>
-<br>
+
 
 ### 🔶変更事項を入力し、実行すると投稿詳細ページへ遷移する
-[![Image from Gyazo](https://i.gyazo.com/2344146487dadcc354f034ebaa5415a7.gif)](https://gyazo.com/2344146487dadcc354f034ebaa5415a7)
-<br>
-<br>
+
 
 ### 🔶削除をクリックすると、投稿が削除され、投稿一覧ページへ遷移する
-[![Image from Gyazo](https://i.gyazo.com/f270a1e5709876f0aafd88a9c2217831.gif)](https://gyazo.com/f270a1e5709876f0aafd88a9c2217831)
-<br>
-<br>
+
 
 ### 🔶DMをしたことのないチームには「DMする」ボタンがある
-[![Image from Gyazo](https://i.gyazo.com/24a10cf766c7544832733f691a0099b1.jpg)](https://gyazo.com/24a10cf766c7544832733f691a0099b1)
-<br>
-<br>
+
 
 ### 🔶「DMする」ボタンをクリックするとDMページへ遷移する
-<br>
-<br>
+
 
 ### 🔶DMをしたことのあるチームには「DMページへ」ボタンがある
-[![Image from Gyazo](https://i.gyazo.com/77645b87a06f5f302535aa19e2f19108.jpg)](https://gyazo.com/77645b87a06f5f302535aa19e2f19108)
-<br>
-<br>
+
 
 ### 🔶DMページでコメントを入力し「送信」を押すとコメントが追加される
 
